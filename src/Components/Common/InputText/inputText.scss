@@ -1,0 +1,76 @@
+@import "./../../../SCSS/variable.scss";
+
+.form {
+
+    &-block {
+        border-bottom: solid 1px $ash-color;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    &-row {
+        padding-bottom: 25px;
+
+        /* custom style editor */
+        .fr-box.fr-basic {
+            border-radius: 5px;
+        }
+        .fr-toolbar.fr-top {
+            border-radius: 5px 5px 0 0;
+        }
+        .fr-wrapper {
+            border-bottom-color: $ash-color !important;
+            border-radius: 0 0 5px 5px;
+            height: 120px;
+        }
+        .second-toolbar {
+            display: none;
+        }
+        /* custom style editor */
+
+        .error-text {
+            color: red;
+            padding-top: 10px;
+        }
+    }
+
+    &-label {
+        color: $light-blue-color;
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        position: relative;
+
+        &-hint {
+            color: $ash-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            position: absolute;
+            right: 0px;
+            bottom: 5px;
+        }
+    }
+
+    &-text {
+        border: solid 1px $ash-color;
+        border-radius: 5px;
+        font-size: 14px;
+        height: 40px;
+        padding: 10px 12px;
+        width: 100%;
+    }
+
+    &-area {
+        border: solid 1px $ash-color;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 14px;
+        height: 120px;
+        resize: none;
+        padding: 10px 12px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,76 @@
+@import "./SCSS/reset.scss";
+@import "./SCSS/variable.scss";
+@import "./SCSS/common.scss";
+
+.App {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  background-color: $body-bg;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.body-section {
+  background-color: $white-color;
+  border: solid 1px $ash-color;
+  border-radius: 10px;
+}
+.template-form {
+  @extend .body-section;
+
+  flex: 0 0 70%;
+
+  & > div {
+    padding: 20px 30px;
+  }
+
+  &__header {
+    border-bottom: solid 1px $ash-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+  }
+
+  .submit-block {
+    padding: 10px 0px;
+    text-align: right;
+  }
+}
+
+.side-nav {
+  @extend .body-section;
+  flex:0 0 27%;
+  padding: 30px;
+
+  ul {
+    counter-reset: section;
+    list-style-type: none;
+    li {
+      color: $dark-ash-color;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 15px 0 15px 40px;
+      position: relative;
+
+      &:before {
+        background-color: #fafbfc;
+        border: solid 1px $dark-ash-color;
+        border-radius: 50%;
+        counter-increment: section;
+        content: counters(section, ".") "";
+        height: 25px;
+        width: 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 12px;
+      }
+    }
+  }
+}
+

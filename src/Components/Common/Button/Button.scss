@@ -1,0 +1,25 @@
+@import "./../../../SCSS/variable.scss";
+
+button {
+    background-color: transparent;
+}
+
+.button {
+    color: $white-color;
+    cursor: pointer;
+    border: solid 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px;
+    min-width: 150px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &-primary {
+        background-color: $green-color;
+        border-color: $dark-green-color;
+    }
+
+}

@@ -1,0 +1,15 @@
+.profile-block {
+    display: flex;
+    align-items: center;
+    & > * {
+        margin: 0 5px;
+    }
+}
+.arrow {
+    width: 15px;
+}
+.profile_img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
