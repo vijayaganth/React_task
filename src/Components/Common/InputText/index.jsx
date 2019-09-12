@@ -14,7 +14,8 @@ export default ({
         blurID,
         handleBlur,
         minlength,
-        submit
+        submit,
+        handleFocus
     }) => <div className="form-row">
     {labelText && <label className="form-label" htmlFor={inputID}>
         {labelText}
@@ -29,6 +30,7 @@ export default ({
         onChange={handleChange}
         onBlur={handleBlur}
         placeholder={placeHolder}
+        onFocus={handleFocus}
     />
     {((isRequired && (value === "" || minlength > value.length) && (blurID === inputID || submit)) || (!isRequired && value !== "" && minlength > value.length && (blurID === inputID || submit))) && <div className="error-text">{error_text}</div>}
 </div>

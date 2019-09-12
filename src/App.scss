@@ -42,7 +42,20 @@
 .side-nav {
   @extend .body-section;
   flex:0 0 27%;
-  padding: 30px;
+  position: relative;
+
+  &__inner {
+    padding: 30px;
+    position: absolute;
+    top: 0px;
+    width: 307px;
+    height: 100%;
+    &.sticky {
+      position: fixed;
+      
+    }
+  }
+  
 
   ul {
     counter-reset: section;

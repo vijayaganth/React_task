@@ -1,0 +1,172 @@
+{
+    "template_fields": [
+        {
+            "name": "template_category",
+            "label": "Template Category",
+            "hint": "min 5 character",
+            "inputID": "",
+            "placeHolder": "Select Category",
+            "element": "input",
+            "type": "select",
+            "isRequired": true,
+            "minlength": 0,
+            "error_text":"This is mandatory field",
+            "options":[
+                { "value": "template_category_one", "label": "Template_category_one" },
+                { "value": "template_category_two", "label": "Template_category_two" },
+                { "value": "template_category_three", "label": "Template_category_three" },
+                { "value": "template_category_four", "label": "Template_category_four" },
+                { "value": "template_category_five", "label": "Template_category_five" }
+            ],
+            "isSearchable": false
+        },
+        {
+            "name": "template_name",
+            "label": "Template Name",
+            "hint": "min 5 character",
+            "inputID": "template_name",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": true,
+            "minlength": 5,
+            "error_text":"This is mandatory field and minmum 5 character"
+        }
+    ],
+    "title_fields": [
+        {
+            "name": "title",
+            "label": "Title",
+            "hint": "min 5 character",
+            "inputID": "title",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 5,
+            "error_text":"minmum 5 character or make it empty"
+        },
+        {
+            "name": "subtitle",
+            "label": "Subtitle",
+            "hint": "",
+            "inputID": "subtitle",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        }
+    ],
+    "feature_fields": [
+        {
+            "name": "feature_one",
+            "label": "Feature #1",
+            "hint": "",
+            "inputID": "feature_one",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "feature_two",
+            "label": "Feature #2",
+            "hint": "",
+            "inputID": "feature_two",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "feature_three",
+            "label": "Feature #3",
+            "hint": "",
+            "inputID": "feature_three",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "feature_four",
+            "label": "Feature #4",
+            "hint": "",
+            "inputID": "feature_four",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "feature_five",
+            "label": "Feature #5",
+            "hint": "",
+            "inputID": "feature_five",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "search_term",
+            "label": "Search Term",
+            "hint": "",
+            "inputID": "search_term",
+            "placeHolder": "",
+            "element": "input",
+            "type": "textarea",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "subject_one",
+            "label": "Subject Matter #1",
+            "hint": "",
+            "inputID": "subject_one",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "subject_two",
+            "label": "Subject Matter #2",
+            "hint": "",
+            "inputID": "subject_two",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        },
+        {
+            "name": "subject_three",
+            "label": "Subject Matter #3",
+            "hint": "",
+            "inputID": "subject_three",
+            "placeHolder": "",
+            "element": "input",
+            "type": "text",
+            "isRequired": false,
+            "minlength": 0,
+            "error_text":""
+        }
+    ]
+}
