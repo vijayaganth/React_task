@@ -6,7 +6,7 @@ class SideNav extends Component {
        super(props);
        this.state = {
            variableList: [
-               "stone_name", "material_type", "stone_1_pcs", "stone_1_weight", "stone_2_pcs", "stone_2_pcs", "stone_2_weight", "stone_1_cut"
+               "stone_name", "material_type", "stone_1_pcs", "stone_1_weight", "stone_2_pcs", "stone_2_weight", "stone_1_cut"
            ],
            stickyPosition: false
        };
