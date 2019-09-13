@@ -33,7 +33,7 @@ class TemplateForm extends Component {
         }
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         const { currentID, currentValue, selectionStart, editorIns } = this.state;
         const { insertVariable } = this.props;
 
@@ -93,6 +93,7 @@ class TemplateForm extends Component {
         if(typeof evt.editor.getSelection().getRanges()[0] !== "undefined") {        
             var cursorValue = evt.editor.getData().length;
             cursorValue = typeof evt.editor.getSelection().getRanges()[0] !== "undefined" && evt.editor.getSelection().getRanges()[0].startOffset+3 
+            
             this.setState({ 
                 currentID: "product_description",   
                 product_description: evt.editor.getData(),
@@ -160,7 +161,6 @@ class TemplateForm extends Component {
                                     { name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] }, ]
                                 } }
                                 onChange={this.onEditorChange}
-                                onBlur={this.onEditorChange}
                                 onFocus={this.onEditorChange}
                             />
 
